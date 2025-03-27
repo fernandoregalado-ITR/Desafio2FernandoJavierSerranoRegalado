@@ -1,0 +1,16 @@
+header{
+    background-color: #B19EF5;
+}
+img{
+    height: 140px;
+    position: relative;
+    right: 900px;
+}
+nav div{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: gray;
+}
