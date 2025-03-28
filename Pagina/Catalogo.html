@@ -1,28 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparkle Veti</title>
-    <link rel="Stylesheet" href="../CSS/Style.Css">
+    <title>Catálogo DSW</title>
+    <style>
+        .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+        body {
+            background-color:#A1C6E7;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #F1F1F1;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .producto-principal {
+            background-color: #FFFFFF;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .producto {
+            background-color: #FFFFFF;
+            border: 1px solid #ccc;
+            width: 150px;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .btn-catalogo {
+            background-color: #2182b9;
+            border: none;
+            color: white;
+            padding: 8px 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            background-color: gray;
+        }
+        .tarjetas{
+            justify-content: center; 
+        }
+    </style>
 </head>
 <body>
     <header>
-       
-            <ul>
-                <div class="nav div">
-                    <div class="img1">
-                        <img src="../IMG/LOGOMASCOTAS.avif">
-                    </div>
-                </div>
+        <nav>
+            <div class="src">
+                <img src="../IMG/Captura de pantalla 2025-03-28 101902.png">
+            <a href="Inicio.html">Inicio</a>
+            <a href="Catalogo.html">Catálogo</a>
+            <a href="Historia.html">Historia</a>
+            <a href="#">Certificaciones</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+    </header>
 
-                    <div class="li">
-                    <a href="Inicio.html"> Inicio 
-                    <li a href="Catalogo.html"> Catalogo </li>
-                    <li a href="Certificaciones.html"> Certificaciones </li>
-                    <li a href="#"> Contactanos </li>
-                    <li a href="#"> Historia </li>
-                    </div>
-            </ul>
+    <h1>Producto más vendido</h1>
+<div class="tarjetas">
+    <div class="producto-principal">
+        <img src="../IMG/transportadoruno.webp" width="230px">
+        <h1>Tranportador animal</h1>
+        <p>Transporta tu mascota, sín ningun peligro</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <h1> Favoritos </h1>
+
+    <div class="producto">
+        <img src="../IMG/alimentoenlatadouno.webp" width="150px">
+        <p>Descripción: Este producto nunca se caduca, por lo que es ideal para casos extremos </p>
+        <h3>Alimento enlatado</h3>
+        <p>Precio $0.80</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/alimentograndeperrouno.webp" width="150px">
+        <p>Descripción: Este producto trae 2 kilos de alimento para perros </p>
+        <h3>Bolsa mediana de comida</h3>
+        <p>Precio $1.20</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/alimentograndegato.webp" width="150px">
+        <p>Descripción: Este producto trae 2 kilos de alimento para gatos </p>
+        <h3>Bolsa mediana de comida</h3>
+        <p>Precio $1.50</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/Alimentouno.webp" width="150px">
+        <p>Descripción: Este producto trae 3 kilos de alimento para perros, que puede durar 4 meses </p>
+        <h3>Bolsa grande de comida</h3>
+        <p>Precio $1.90</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/alimentogatouno.webp" width="150px">
+        <p>Descripción: Este producto es exclusivo de nuestra tienda, ya que se crea en Ankara </p>
+        <h3>Alimento pequeño de alimento</h3>
+        <p>Precio $1.20</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/bravcesito.webp" width="150px">
+        <p>Descripción: Este producto es exclusivo de nuestra tienda, ya que se crea en Brusselas </p>
+        <h3>Alimento proteinico para mascotas</h3>
+        <p>Precio $0.90</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+    </div>
+
+    <img src="../IMG/todonuevogatp.webp">
+    <img src="../IMG/todonuevoperro.webp">
+
+    <h1>Producto nuevo</h1>
+
+    <div class="producto">
+        <img src="../IMG/productonuevo1.webp" width="150px">
+        <p>Descripción: Con este producto podrás peinar a tu mascota con facilidad </p>
+        <h3>Peine para mascotas</h3>
+        <p>Precio $0.40</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/productonuevo2.webp" width="150px">
+        <p>Descripción: Con este producto podras limpiar las heces fecales de tu mascota </p>
+        <h3>Limpia para mascotas</h3>
+        <p>Precio $0.60</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/productonuevo3.webp" width="150px">
+        <p>Descripción: Con este producto podras alimentar a tu gato facilmente aumentandole su instinto cazador </p>
+        <h3>Alimento especializado de gatos</h3>
+        <p>Precio $0.30</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/productonuevo4.webp" width="150px">
+        <p>Descripción: Con este producto podras peinar y dejar elegante a tu mascota </p>
+        <h3>Peine especializado para perros</h3>
+        <p>Precio $0.60</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+
+    <div class="producto">
+        <img src="../IMG/productonuevo5.webp" width="150px">
+        <p>Descripción: Con este producto podras llevar a tu gato/perro pequeño a cualquier lugar! </p>
+        <h3>Cama ligera para mascotas</h3>
+        <p>Precio $1.30</p>
+        <a href="#" class="btn-catalogo">Añade al carrito</a>
+    </div>
+</div>
+    <footer>
+        © Derechos reservados | Estudiante de primer año “Fernando Javier Serrano Regalado y 20220190” 2025
+    </footer>
 </body>
 </html>
